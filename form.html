@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--css-->
+<link rel="stylesheet" href="style.css">
+
+    <title>Google Form to Personalized Form Automation</title>
+  </head>
+  <body>
+    <!--CODE START-->
+    <script type="text/javascript">var submitted=false;</script>
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='thankyou.html';}"></iframe> 
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeFDfdlZTibM64MOHYb8A-eMqVIsNp4ST6hYSgZ-nWOADlFsA/formResponse" method="POST" target="hidden_iframe" onsubmit="return validateForm();">
+                <!--name-->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Your Name..." required name="entry.1857936247">
+                    <label for="floatingInput">Name</label>
+                  </div>
+                  <!--roll no-->
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Your Roll.." required name="entry.760840349">
+                    <label for="floatingInput">KIIT Roll</label>
+                  </div>
+                <!--kiit mail-->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="yourroll@kiit.ac.in..." required name="entry.517423668">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                <!---->  
+                  <!--submit button-->
+                <button type="submit" class="btn btn-outline-success float-end" onclick="AddedToDatabase()">Submit</button>
+              </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function AddedToDatabase() {
+  alert("I am an alert box!");
+}
+</script>
+    <!--CODE END-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>

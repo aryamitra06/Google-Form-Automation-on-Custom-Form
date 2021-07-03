@@ -1,0 +1,9 @@
+.container{
+    padding-top: 20rem;
+}
+
+.form-control{
+    outline: none !important;
+  box-shadow: none !important;
+
+}
